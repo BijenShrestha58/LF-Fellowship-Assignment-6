@@ -4,8 +4,8 @@ const CANVAS_DIMENSIONS = {
 };
 
 const PLAYER_DIMENSIONS = {
-  WIDTH: 124,
-  HEIGHT: 120,
+  WIDTH: 92,
+  HEIGHT: 92,
 };
 
 const PLATFORM_DIMENSIONS = {};
