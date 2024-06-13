@@ -11,7 +11,7 @@ canvas.height = CANVAS_DIMENSIONS.HEIGHT;
 let player: Player;
 let background: Background;
 const backgroundImage = document.getElementById("bg") as HTMLImageElement;
-const playerImgL = document.getElementById("playerL") as HTMLImageElement;
+// const playerImgL = document.getElementById("playerL") as HTMLImageElement;
 const playerImgR = document.getElementById("playerR") as HTMLImageElement;
 
 function setUp() {
