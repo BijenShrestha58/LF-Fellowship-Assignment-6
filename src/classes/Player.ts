@@ -73,7 +73,6 @@ export default class Player implements IPlayer {
 
   keyDown(e: KeyboardEvent) {
     this.keys.add(e.key);
-    if (e.key === " ") this.jump();
   }
 
   keyUp(e: KeyboardEvent) {

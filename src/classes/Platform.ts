@@ -28,6 +28,6 @@ export default class Platform {
     ctx.fill();
   }
   removeCheck() {
-    this.remove = this.y > CANVAS_DIMENSIONS.HEIGHT + 50;
+    this.remove = this.y > CANVAS_DIMENSIONS.HEIGHT + 10;
   }
 }
