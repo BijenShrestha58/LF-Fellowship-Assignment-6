@@ -30,7 +30,7 @@ window.addEventListener("keydown", (e) => {
         gameState === GAME_STATE.GAME_OVER
       ) {
         gameState = GAME_STATE.PLAYING;
-        console.log(e.key, gameState);
+        score = 0;
         setUp();
       }
   }
