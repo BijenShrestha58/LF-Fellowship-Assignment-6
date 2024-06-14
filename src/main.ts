@@ -46,7 +46,8 @@ function setUp() {
     platforms.push(
       new Platform(
         getRandomInt(0, CANVAS_DIMENSIONS.WIDTH - 60),
-        CANVAS_DIMENSIONS.HEIGHT - i * gap
+        CANVAS_DIMENSIONS.HEIGHT - i * gap,
+        enemySheet
       )
     );
   }
@@ -99,7 +100,8 @@ function draw() {
     platforms.push(
       new Platform(
         getRandomInt(0, CANVAS_DIMENSIONS.WIDTH - 60),
-        platforms[platforms.length - 1].y - gap
+        platforms[platforms.length - 1].y - gap,
+        enemySheet
       )
     );
   }

@@ -6,6 +6,8 @@ export interface IPlatform {
   y: number;
   w: number;
   h: number;
+  remove: boolean;
+  image: HTMLImageElement;
 }
 
 export default class Platform {
@@ -14,17 +16,18 @@ export default class Platform {
   w: number;
   h: number;
   remove: boolean;
+  image: HTMLImageElement;
 
-  constructor(x: number, y: number) {
+  constructor(x: number, y: number, image: HTMLImageElement) {
     this.x = x;
     this.y = y;
     this.w = 60;
     this.h = 15;
     this.remove = false;
+    this.image = image;
   }
   draw() {
-    ctx.fillStyle = "rgb(100,225,100)";
-    ctx.rect(this.x, this.y, this.w, this.h);
+    ctx.drawImage(this.image, 0, 0, 120, 35, this.x, this.y, this.w, this.h);
     ctx.fill();
   }
   removeCheck() {
